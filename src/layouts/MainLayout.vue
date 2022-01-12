@@ -1,25 +1,49 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-btn
+    <q-header class="bg-white" elevated>
+      <q-toolbar class="row">
+        <!-- <q-btn
           flat
           dense
           round
           icon="menu"
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
-        />
+        /> -->
 
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
+        <!-- <q-toolbar-title class="bg-black">
+          <span class="text-subtitle">emprego.net</span>
+          
+          <span class="q-mx-sm">|</span>
 
-        <div>Quasar v{{ $q.version }}</div>
+          <span class="text-grey text-subtitle2">Recrutador</span>
+        </q-toolbar-title> -->
+        <div class="row col-2 items-center bgred justify-start">
+          <span class="text-h5 text-primary">emprego.net</span>
+          <span class="q-mx-sm text-grey">|</span>
+          <span class="text-subtitle text-grey">Recrutador</span>
+        </div>
+
+        <div class="row col-3 items-center justify-start text-black q-ml-md">
+          <q-btn no-caps flat>Home</q-btn>
+          <q-btn no-caps flat>Ajuda</q-btn>
+          <q-btn no-caps flat>Blog</q-btn>
+        </div>
+
+        <div class="row col-7 items-center justify-end text-black">
+          <q-btn>Entrar</q-btn>
+          <q-btn>Cadastro grátis</q-btn>
+          <span class="q-mx-sm text-grey">|</span>
+          <q-btn class="q-mr-sm">Sou Recrutador</q-btn>
+        </div>
+
+        
+
+        <!-- <div class="bg-black">Quasar v{{ $q.version }}</div> -->
       </q-toolbar>
     </q-header>
 
-    <q-drawer
+    <!-- <q-drawer
       v-model="leftDrawerOpen"
       show-if-above
       bordered
@@ -38,7 +62,7 @@
           v-bind="link"
         />
       </q-list>
-    </q-drawer>
+    </q-drawer> -->
 
     <q-page-container>
       <router-view />
@@ -96,7 +120,7 @@ const linksData = [
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink },
+  components: {  },
   data () {
     return {
       leftDrawerOpen: false,
