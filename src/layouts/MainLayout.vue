@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header class="bg-white" elevated>
-      <q-toolbar class="row">
+      <q-toolbar class="row q-py-sm">
         <!-- <q-btn
           flat
           dense
@@ -18,8 +18,8 @@
 
           <span class="text-grey text-subtitle2">Recrutador</span>
         </q-toolbar-title> -->
-        <div class="row col-2 items-center bgred justify-start">
-          <span class="text-h5 text-primary">emprego.net</span>
+        <div class="row col-2 items-center justify-start">
+          <span class="text-h6 text-primary text-bold">emprego.net</span>
           <span class="q-mx-sm text-grey">|</span>
           <span class="text-subtitle text-grey">Recrutador</span>
         </div>
@@ -31,15 +31,17 @@
         </div>
 
         <div class="row col-7 items-center justify-end text-black">
-          <q-btn>Entrar</q-btn>
-          <q-btn>Cadastro grátis</q-btn>
+          <q-btn outline class="q-mr-sm" no-caps>
+            <q-icon name="fas fa-user-circle" class="q-mr-sm" size="20px" />
+            Entrar
+          </q-btn>
+          <q-btn color="primary" no-caps>Cadastro grátis</q-btn>
           <span class="q-mx-sm text-grey">|</span>
-          <q-btn class="q-mr-sm">Sou Recrutador</q-btn>
+          <q-btn outline color="primary" no-caps class="q-mr-lg">
+            Sou Recrutador
+            <q-icon name="fas fa-arrow-right" class="q-ml-sm" size="13px" />
+          </q-btn>
         </div>
-
-        
-
-        <!-- <div class="bg-black">Quasar v{{ $q.version }}</div> -->
       </q-toolbar>
     </q-header>
 
