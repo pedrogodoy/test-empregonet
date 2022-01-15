@@ -164,7 +164,6 @@ export default {
   },
   methods: {
     applyFilters() {
-      console.log('chamouu!')
       this.$emit('applyFilters');
     }
   }

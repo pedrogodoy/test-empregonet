@@ -1,5 +1,6 @@
 <template>
-  <q-page class="row q-py-lg" :class="$q.screen.lt.md ? 'q-px-sm' : 'q-px-xl q-mx-xl'">
+  <q-page class="row q-py-lg" 
+    :style="$q.screen.gt.lg ? 'margin: 0 200px 0 200px' : ''" :class="$q.screen.lt.md ? 'q-px-sm' : 'q-px-xl q-mx-xl'">
   
     <div class="row col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
       <search-by-role />
