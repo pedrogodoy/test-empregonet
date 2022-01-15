@@ -1,15 +1,36 @@
 <template>
-  <q-page class="row q-px-xl q-py-lg">
+  <q-page class="row q-py-lg" :class="$q.screen.lt.md ? 'q-px-sm' : 'q-px-xl q-mx-xl'">
   
-    <div class="row col-5">
-      <q-input class="col-11" outlined v-model="text" label="Cargo">
+    <div class="row col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+      <q-input class="col-xl-11 col-lg-11 col-md-11 col-sm-12 col-xs-12" outlined v-model="text" label="Cargo">
         <template v-slot:append>
           <q-icon name="search" />
         </template>
       </q-input>
     </div>
 
-    <div class="row col-5">
+    <div class="col-12 lt-md q-mt-lg">
+      <div class="text-small text-grey">
+        450 vagas encontradas
+      </div>
+    </div>
+      
+    <div class="row col-12 lt-md q-mt-lg justify-between">
+      <q-btn outline class="col-2" no-caps>
+        <q-icon name="fas fa-sliders-h" size="15px" />
+      </q-btn>
+
+      <q-btn outline class="col-6" no-caps>
+        Rio de janeiro - 5 km
+      </q-btn>
+
+      <q-btn outline class="col-3" no-caps>
+        tipo
+      </q-btn>
+    </div>
+
+
+    <div class="row col-5 gt-sm">
       <q-input class="col-12" outlined v-model="text" label="Local">
         <template v-slot:append>
           <q-icon name="place" />
@@ -17,7 +38,7 @@
       </q-input>
     </div>
 
-    <div class="bg-re row justify-end col-2">
+    <div class="bg-re row justify-end col-2 gt-sm">
       <q-btn class="col-10" outline color="black" no-caps>
           Buscar vagas
       </q-btn>
@@ -29,7 +50,7 @@
       </div>
     </div>
 
-    <div class="row justify-between col-12">
+    <div class="row justify-between col-12 gt-sm">
       <div class="text-h5">
         Filtros
       </div>
@@ -43,7 +64,7 @@
       />
     </div>
 
-    <div class="col-3">
+    <div class="col-3 gt-sm">
       <span class="text-h6 bg-blu">Distância</span>
       <div class="row q-px-md">
         <q-slider
@@ -125,12 +146,16 @@
       
     </div>
 
-    <div class="offset-1 col-8">
+    <div class="offset-xl-1 offset-lg-1 offset-md-1 offset-sm-0 offset-xs-0 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
       <q-card v-for="item in 5" :key="item" flat bordered class="q-mb-md">
         <q-card-section class="row justify-between">
           <div class="text-h6">Auxiliar Administrativo</div>
-          <q-btn outline round>
+          <q-btn outline round class="gt-sm">
             <q-icon size="15px" name="far fa-star" />
+          </q-btn>
+          <q-btn class="row items-center lt-md" color="grey" flat no-caps>
+            <q-icon size="15px" name="far fa-star" />
+            <span class="q-ml-sm">Salvar</span>
           </q-btn>
 
           <div class="row col-12 items-end">
@@ -172,8 +197,8 @@
             <q-btn flat no-caps color="primary">...mais detalhes</q-btn>
           </div>
 
-          <div class="col-12">
-            <q-btn outline no-caps color="primary">Me candidatar</q-btn>
+          <div class="row col-12">
+            <q-btn outline no-caps color="primary" class="col-xl-2 col-lg-2 col-md-3 col-sm-12 col-xs-12">Me candidatar</q-btn>
           </div>
         </q-card-section>
       </q-card>
