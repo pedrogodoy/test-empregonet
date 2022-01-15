@@ -47,19 +47,7 @@
       content-class="bg-grey-1"
       :breakpoint="5000"
     >
-      <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-          Essential Links
-        </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
+      <MobileFilters @applyFilters="leftDrawerOpen = false" />
     </q-drawer>
 
     <q-page-container>
@@ -69,7 +57,7 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
+import MobileFilters from 'src/components/MobileFilters.vue'
 
 const linksData = [
   {
@@ -118,7 +106,7 @@ const linksData = [
 
 export default {
   name: 'MainLayout',
-  components: {  },
+  components: { MobileFilters },
   data () {
     return {
       leftDrawerOpen: false,

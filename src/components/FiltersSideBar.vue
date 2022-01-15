@@ -1,6 +1,6 @@
 <template>
   <div class="col-3 gt-sm">
-    <span class="text-h6 bg-blu">Distância</span>
+    <span class="text-subtitle1 text-bold bg-blu">Distância</span>
     <div class="row q-px-md">
       <q-slider
         v-model="distance"
@@ -17,7 +17,7 @@
     
     <q-separator class="q-mb-lg" />
 
-    <span class="text-h6">Tipo de vaga</span>
+    <span class="text-subtitle1 text-bold">Tipo de vaga</span>
     <q-option-group
       :options="vacanciesTypes"
       type="radio"
@@ -26,7 +26,7 @@
     
     <q-separator class="q-mb-lg" />
 
-    <span class="text-h6">Tipo de cargo</span>
+    <span class="text-subtitle1 text-bold">Tipo de cargo</span>
     <q-option-group
       :options="contractTypes"
       type="checkbox"
@@ -35,7 +35,7 @@
     
     <q-separator class="q-mb-lg" />
 
-    <span class="text-h6">Faixa salarial</span>
+    <span class="text-subtitle1 text-bold">Faixa salarial</span>
     <q-option-group
       :options="salariesRange"
       type="checkbox"
@@ -44,7 +44,7 @@
     
     <q-separator class="q-mb-lg" />
 
-    <span class="text-h6">Experiência no cargo</span>
+    <span class="text-subtitle1 text-bold">Experiência no cargo</span>
     <q-option-group
       :options="experiences"
       type="checkbox"
@@ -53,7 +53,7 @@
     
     <q-separator class="q-mb-lg" />
 
-    <span class="text-h6">Softwares de escritório</span>
+    <span class="text-subtitle1 text-bold">Softwares de escritório</span>
     <q-option-group
       :options="officeSoftwares"
       type="checkbox"
@@ -62,7 +62,7 @@
     
     <q-separator class="q-mb-lg" />
 
-    <span class="text-h6">Escolaridade mínima</span>
+    <span class="text-subtitle1 text-bold">Escolaridade mínima</span>
     <q-option-group
       :options="schoolingOptions"
       type="checkbox"
@@ -72,7 +72,7 @@
     <q-separator class="q-mb-lg" />
 
 
-    <span class="text-h6">Idiomas</span>
+    <span class="text-subtitle1 text-bold">Idiomas</span>
     <q-option-group
       :options="languagesOptions"
       type="checkbox"

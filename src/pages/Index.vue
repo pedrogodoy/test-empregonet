@@ -6,7 +6,7 @@
     </div>
 
     <div class="col-12 lt-md q-mt-lg">
-     <vacancies-found-on-mobile />
+     <vacancies-found-on-mobile :jobsCount="jobs.length" />
     </div>
       
     <filters-button-on-mobile />
