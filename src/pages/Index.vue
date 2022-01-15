@@ -1,33 +1,27 @@
 <template>
   <q-page class="row q-px-xl q-py-lg">
   
-      <div class="row col-5">
-        <q-input class="col-11" outlined v-model="text" label="Cargo">
-          <template v-slot:append>
-            <q-icon name="search" />
-          </template>
-        </q-input>
-      </div>
+    <div class="row col-5">
+      <q-input class="col-11" outlined v-model="text" label="Cargo">
+        <template v-slot:append>
+          <q-icon name="search" />
+        </template>
+      </q-input>
+    </div>
 
-      <div class="row col-5">
-<q-input class="col-12" outlined v-model="text" label="Local">
+    <div class="row col-5">
+      <q-input class="col-12" outlined v-model="text" label="Local">
         <template v-slot:append>
           <q-icon name="place" />
         </template>
       </q-input>
-      </div>
+    </div>
 
-      
-
-      <div class="bg-re row justify-end col-2">
-          <q-btn class="col-10" outline color="black" no-caps>
-              Buscar vagas
-          </q-btn>
-      </div>
-
-      
-    
-
+    <div class="bg-re row justify-end col-2">
+      <q-btn class="col-10" outline color="black" no-caps>
+          Buscar vagas
+      </q-btn>
+    </div>
 
     <div class="col-12 bg-blu">
       <div class="col-6">
@@ -51,7 +45,7 @@
 
     <div class="col-3">
       <span class="text-h6 bg-blu">Distância</span>
-      <div class="q-px-lg">
+      <div class="row q-px-md">
         <q-slider
           v-model="distance"
           :marker-labels="arrayMarkerLabel"
