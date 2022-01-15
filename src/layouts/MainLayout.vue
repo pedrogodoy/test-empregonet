@@ -13,13 +13,6 @@
           @click="leftDrawerOpen = !leftDrawerOpen"
         />
 
-        <!-- <q-toolbar-title class="bg-black">
-          <span class="text-subtitle">emprego.net</span>
-          
-          <span class="q-mx-sm">|</span>
-
-          <span class="text-grey text-subtitle2">Recrutador</span>
-        </q-toolbar-title> -->
         <div class="row col-2 items-center justify-start">
           <span class="text-h6 text-primary text-bold">emprego.net</span>
           <span class="q-mx-sm text-grey gt-sm">|</span>
