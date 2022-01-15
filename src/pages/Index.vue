@@ -1,20 +1,32 @@
 <template>
   <q-page class="row q-px-xl q-py-lg">
-    <div class="col-12 row q-gutter-m bg-ble justify-cente">
-      <q-input class="col-4" outlined v-model="text" label="Cargo">
-        <template v-slot:append>
-          <q-icon name="search" />
-        </template>
-      </q-input>
-      <q-input class="col-4 q-mx-sm" outlined v-model="text" label="Local">
+  
+      <div class="row col-5">
+        <q-input class="col-11" outlined v-model="text" label="Cargo">
+          <template v-slot:append>
+            <q-icon name="search" />
+          </template>
+        </q-input>
+      </div>
+
+      <div class="row col-5">
+<q-input class="col-12" outlined v-model="text" label="Local">
         <template v-slot:append>
           <q-icon name="place" />
         </template>
       </q-input>
-      <q-btn class="offset-1 col-2" outline color="black" no-caps>
-        Buscar vagas
-      </q-btn>
-    </div>
+      </div>
+
+      
+
+      <div class="bg-re row justify-end col-2">
+          <q-btn class="col-10" outline color="black" no-caps>
+              Buscar vagas
+          </q-btn>
+      </div>
+
+      
+    
 
 
     <div class="col-12 bg-blu">
